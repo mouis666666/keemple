@@ -1,0 +1,408 @@
+*{
+    box-sizing: border-box;
+}
+:root ,body{
+    scroll-behavior: smooth;
+}
+@font-face{
+    font-family: font-one;
+    src: url("../fonts/all-general/Lato/Lato-Regular.ttf");
+}
+.mo66-all-head{
+    width: 270px;
+    height: 20%;
+    background-image: url("../images/dots.png");
+    background-size: 7% 7%;
+    background-repeat: repeat;
+    right: 40%;
+    top: 40%;
+}
+
+/* ===================================================== end general======================================================= */
+
+.header{
+    background-image:  linear-gradient(#000000a3 50%,#000000a3 50%),url("../images/PF_Keemple1.jpg");
+    background-size: cover;
+    background-attachment: scroll;
+}
+.nav-link{
+    position: relative;
+    overflow: hidden;
+
+}
+.nav-link::before{
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 3px;
+    background-color: black;
+    top: 75%;
+    right: 100%;
+    transition: all .7s;
+
+
+}
+.nav-link:hover::before{
+    right: 25%;
+}
+.mo66-header-icon{
+padding: 0px 10px;
+}
+
+.mo66-type::after{
+    content: '';
+    animation: type 5s infinite;
+}
+
+
+@keyframes type {
+    0%{content:"D"; }
+    2%{content:"De|"; }
+    4%{content:"Dev|"; }
+    6%{content:"Deve|"; }
+    8%{content:"Devel|"; }
+    10%{content:"Develo|"; }
+    12%{content:"Develop|"; }
+    15%{content:"Develope|"; }
+    17%{content:"Developer|"; }
+    20%{content:"Develope|"; }
+    22%{content:"Develop|"; }
+    25%{content:"Develo|"; }
+    27%{content:"Devel|"; }
+    29%{content:"Deve|"; }
+    31%{content:"Dev|"; }
+    33%{content:"De|"; }
+    35%{content:"D|"; }
+    37%{content:"|"; }
+    39%{content: "D|";}
+    41%{content: "De|";}
+    43%{content: "Des|";}
+    45%{content: "Des|";}
+    46%{content: "Desi|";}
+    48%{content: "Desig|";}
+    50%{content: "Design|";}
+    52%{content: "Designe|";}
+    54%{content: "Designer|";}
+    56%{content: "Designe|";}
+    58%{content: "Design|";}
+    60%{content: "Desig|";}
+    62%{content: "Desi|";}
+    64%{content: "Des|";}
+    66%{content: "De|";}
+    68%{content: "D|";}
+    70%{content: "|";}
+    73%{content: "L|";}
+    75%{content: "La|";}
+    79%{content: "Lar|";}
+    82%{content: "Larr|";}
+    83%{content: "Larry |";}
+    86%{content: "Larry Da|";}
+    89%{content: "Larry Dani|";}
+    90%{content: "Larry Daniel|";}
+    91%{content: "Larry Daniels|";}
+    92%{content: "Larry Daniel|";}
+    93%{content: "Larry Danie|";}
+    94%{content: "Larry Dani|";}
+    95%{content: "Larry Da|";}
+    96%{content: "Larry |";}
+    97%{content: "Larr|";}
+    98%{content: "Lar|";}
+    98%{content: "La|";}
+    99%{content: "L|";}
+    100%{content: "|";}  
+}
+
+
+
+
+/* ===================================================== end header======================================================= */
+
+.mo66-dot{
+    margin-left: 25%;
+    background-image: url("../images/dots.png");
+    background-size: 2% 2%;
+    background-repeat: repeat;
+    width: 65%;
+}
+.mo66-s1-img{
+    transform: translateY(-10%);
+    width: 100%;
+}
+
+.mo66-but1{
+    color: white;
+    background-color: black;
+    width:fit-content ;
+    padding: 5px 30px;
+    transition: all 0.7s;
+}
+.mo66-but2{
+    color:black;
+    background-color: white;
+    width:fit-content ;
+    padding: 5px 30px;
+    transition: all 0.7s;
+}
+.mo66-but1:hover{
+    color:black;
+    background-color: white;
+}
+.mo66-but2:hover{
+    color: white;
+    background-color: black;
+}
+
+
+/* ===================================================== end section1======================================================= */
+
+.mo66-all-head1{
+    width: 270px;
+    height: 20%;
+    background-image: url("../images/dots.png");
+    background-size: 7% 7%;
+    background-repeat: repeat;
+    right: 40%;
+    top: 85%;
+}
+
+
+.mo66-s2-bg{
+    background-color: #F7F7F7;
+
+}
+
+.mo66-s2-icon{
+    width: 90px;
+    height: 90px;
+    color: black;
+    background-color: #F7F7F7;
+    margin: auto;
+    transition: all .7s;
+
+}
+.mo66-s2-content:hover .mo66-s2-icon {
+    background-color: black;
+    color: white;
+}
+.mo66-s2-myfont{
+    font-size: 1.2rem;
+}
+
+/* ===================================================== end section 2======================================================= */
+.mo66-all-head2{
+    width: 230px;
+    height: 10%;
+    background-image: url("../images/dots.png");
+    background-size: 7% 7%;
+    background-repeat: repeat;
+    right: 40%;
+    top: 60%;
+}
+.mo66-s3-layer{
+    width: 98%;
+    height: 98%;
+    background-color: #FDFDFD;
+    opacity: 0;
+    transform:scaleY(0%) ;
+    transition: all .7s;
+}
+.mo66-s3-content:hover .mo66-s3-layer {
+    opacity: 1;
+    transform: scaleY(100%);
+}
+.mo66-s3-move{
+    top: 40%;
+}
+.mo66-s3-icon{
+    padding:0px 15px ;
+    margin:0px 3px ;
+    width: 30px;
+    height: 30px;
+    color: white;
+    background-color: black;
+    border:black 1px solid;
+    transition:all 0.7s  ;
+}
+.mo66-s3-icon:hover{
+    background-color: transparent;
+    color: black;
+}
+
+
+/* ===================================== end section3======================================== */
+
+.nav-tabs {
+    border: none;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-tabs .nav-link.active {
+    border-color: transparent;
+    background-color: var(--mainColor);
+    border-radius: 20px ;
+}
+
+.nav-tabs .nav-link {
+    color: #333;
+}
+
+.nav-tabs .nav-link:hover {
+    border-color: transparent;
+}
+
+
+/* ===================================================== end section *3======================================================= */
+
+
+.section4{
+    padding: 160px 0px;
+    background-color: #F7F7F7;
+}
+
+.section5-content img{
+    width: 6%;
+    padding-bottom: 10px;
+}
+.carousel-indicators .mo66-s4-button{
+    width: 10px;
+    height:10px;
+    background-color: gray;
+}
+
+
+
+
+
+
+/* ===================================================== end section4======================================================= */
+
+.mo66-s5-icon{
+    width: 80px;
+    height: 80px;
+}
+.mo66-s5-item{
+    padding-top: 15px;
+}
+
+
+
+/* ===================================================== end section5======================================================= */
+.section6{
+    padding: 160px 0px;
+    background-color: #F7F7F7;
+}
+.mo66-s6-img-inr{
+    transition: all .7s;
+}
+.mo66-s6-img-inr:hover{
+    transform: scale(110%);
+}
+.mo66-s6-layer{
+    width: 94%;
+    height: 94%;
+    background-color: #FDFDFD;
+    opacity: 0;
+    transform:skewY(180deg) scaleX(0%) ;
+    transition: all .9s;
+}
+.mo66-s6-move{
+    top: 40%;
+}
+.mo66-s6-icon{
+    padding:0px 15px ;
+    margin:0px 3px ;
+    width: 30px;
+    height: 30px;
+    color: white;
+    background-color: black;
+    border:black 1px solid;
+    transition:all 0.9s  ;
+}
+.mo66-s6-icon:hover{
+    background-color: transparent;
+    color: black;
+}
+.mo66-s6-content:hover .mo66-s6-layer {
+    opacity: 1;
+    transform: skewY(360deg) scaleX(100%);
+}
+
+
+
+
+/* ===================================================== end section6======================================================= */
+
+
+.mo66-form {
+    display: block;
+    width: 100%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    background-color:#F4F4F4 ;
+    border: var(--bs-border-width) solid var(--bs-border-color);
+    border-radius: var(--bs-border-radius);
+    border-color: transparent;
+
+}
+.mo66-s7-icon{
+    width: 70px;
+    height: 70px;
+    color: black;
+    background-color: #F7F7F7;
+}
+.mo66-s7-icon i{
+    font-size: 1.3rem;
+}
+.mo66-s7-icon{
+    transition: all 0.7s;
+}
+
+.mo66-s6-content:hover .mo66-s7-icon{
+    color: white;
+    background-color: black;
+}
+.mo66-s7-contain{
+    padding: 0px 15%;
+}
+.mo66-s7-lb{
+    color: white;
+    background-color: black;
+    width:fit-content ;
+    padding: 5px 30px;
+}
+.mo66-s7-lb:hover{
+    color: black;
+    background-color: white;
+}
+
+
+
+/* ===================================================== end footer======================================================= */
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ===================================================== end section7======================================================= */
